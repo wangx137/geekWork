@@ -38,7 +38,7 @@
 			<scope>runtime</scope>
 		</dependency>
 
-		<!--lombok插件-->
+		<!--lombok-->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
