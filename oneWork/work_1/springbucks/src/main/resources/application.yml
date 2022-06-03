@@ -1,0 +1,11 @@
+mybatis:
+  type-handlers-package: geektime.spring.springbucks.mapper
+  configuration:
+    map-underscore-to-camel-case: true
+
+spring:
+  redis:
+    host: localhost
+    port: 6379
+    password:
+
