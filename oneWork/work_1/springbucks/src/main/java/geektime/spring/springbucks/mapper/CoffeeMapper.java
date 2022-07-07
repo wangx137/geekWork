@@ -6,7 +6,8 @@ import org.apache.ibatis.annotations.*;
 public interface CoffeeMapper {
 
     @Insert("insert into t_coffee (name, price, create_time, update_time) values (#{name}, #{price}, now(), now())")
-    @Options(useGeneratedKeys = true, keyProperty="id") //自动生成主键，并可将自动生成的主键id返回
+    @Options(useGeneratedKeys = true, keyProperty = "id")
+        //自动生成主键，并可将自动生成的主键id返回
     int save(Coffee coffee);
 
     @Select("select * from t_coffee where id = #{id}")

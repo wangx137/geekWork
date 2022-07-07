@@ -28,18 +28,18 @@ import java.util.Date;
 @MapperScan(basePackages = "geektime.spring.springbucks.mapper")
 public class SpringBucksApplication {
 
-	@Autowired
-	private CoffeeService coffeeService;
+    @Autowired
+    private CoffeeService coffeeService;
 
-	@Autowired
-	private OrderService orderService;
+    @Autowired
+    private OrderService orderService;
 
 //	@Autowired(required = false)
 //	private RedisTemplate<Object, Object> redisTemplate;
 
-	public static void main(String[] args) {
-		SpringApplication.run(SpringBucksApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(SpringBucksApplication.class, args);
+    }
 
 //	@Override
 //	public void run(ApplicationArguments args) throws Exception {

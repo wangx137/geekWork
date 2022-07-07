@@ -6,7 +6,8 @@ import org.apache.ibatis.annotations.*;
 public interface OrderMapper {
 
     @Insert("insert into t_order (customer, coffeeId, state, create_time, update_time) values (#{customer}, #{coffeeId}, #{state}, now(), now())")
-    @Options(useGeneratedKeys = true, keyProperty="id") //自动生成主键，并可将自动生成的主键id返回
+    @Options(useGeneratedKeys = true, keyProperty = "id")
+        //自动生成主键，并可将自动生成的主键id返回
     int save(Order order);
 
     @Select("select * from t_order where id = #{id}")

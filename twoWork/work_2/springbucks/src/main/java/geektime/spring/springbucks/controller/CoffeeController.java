@@ -22,45 +22,49 @@ public class CoffeeController {
 
     /**
      * 根据id查询咖啡 xml格式
+     *
      * @param id
      * @return
      */
-    @GetMapping(path="/queryCoffeeXml/{id}", produces = MediaType.APPLICATION_XML_VALUE)
+    @GetMapping(path = "/queryCoffeeXml/{id}", produces = MediaType.APPLICATION_XML_VALUE)
     @ResponseBody
-    public Coffee queryCoffeeXml(@PathVariable("id") Long id){
+    public Coffee queryCoffeeXml(@PathVariable("id") Long id) {
         return coffeeService.findById(id);
     }
 
     /**
      * 根据id查询咖啡 json格式
+     *
      * @param id
      * @return
      */
-    @GetMapping(path="/queryCoffeeJson/{id}")
+    @GetMapping(path = "/queryCoffeeJson/{id}")
     @ResponseBody
-    public Coffee queryCoffeeJson(@PathVariable("id") Long id){
+    public Coffee queryCoffeeJson(@PathVariable("id") Long id) {
         return coffeeService.findById(id);
     }
 
     /**
      * 根据id查询订单 xml格式
+     *
      * @param id
      * @return
      */
-    @GetMapping(path="/queryOrderXml/{id}", produces = MediaType.APPLICATION_XML_VALUE)
+    @GetMapping(path = "/queryOrderXml/{id}", produces = MediaType.APPLICATION_XML_VALUE)
     @ResponseBody
-    public Order queryOrderXml(@PathVariable("id") Long id){
+    public Order queryOrderXml(@PathVariable("id") Long id) {
         return orderService.findById(id);
     }
 
     /**
      * 根据id查询订单 json格式
+     *
      * @param id
      * @return
      */
-    @GetMapping(path="/queryOrderJson/{id}")
+    @GetMapping(path = "/queryOrderJson/{id}")
     @ResponseBody
-    public Order queryOrderJson(@PathVariable("id") Long id){
+    public Order queryOrderJson(@PathVariable("id") Long id) {
         return orderService.findById(id);
     }
 

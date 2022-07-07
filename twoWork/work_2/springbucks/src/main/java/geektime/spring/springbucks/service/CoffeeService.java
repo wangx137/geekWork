@@ -16,6 +16,7 @@ public class CoffeeService {
 
     /**
      * 根据id编号查找咖啡
+     *
      * @param id
      * @return
      */
@@ -25,31 +26,34 @@ public class CoffeeService {
 
     /**
      * 新增咖啡
+     *
      * @param coffee
      * @return
      */
     @Transactional
-    public int save(Coffee coffee){
+    public int save(Coffee coffee) {
         return coffeeMapper.save(coffee);
     }
 
     /**
      * 修改咖啡
+     *
      * @param coffee
      * @return
      */
     @Transactional
-    public int upd(Coffee coffee){
+    public int upd(Coffee coffee) {
         return coffeeMapper.upd(coffee);
     }
 
     /**
      * 删除咖啡
+     *
      * @param id
      * @return
      */
     @Transactional
-    public int del(Long id){
+    public int del(Long id) {
         return coffeeMapper.del(id);
     }
 
